@@ -14,8 +14,12 @@ public class playbutton extends Actor
      */
     public void act()
     {
-         if (Greenfoot.mouseClicked(this)) {
-        getWorld().setBackground(new GreenfootImage("bathroom-tile"));
+        turn(3);
+    if (Greenfoot.mouseClicked(this)) {
+        getWorld().setBackground(new GreenfootImage("SecondRoom.png"));
+        getWorld().removeObjects(getWorld().getObjects(girlmodel.class));
+        getWorld().removeObjects(getWorld().getObjects(title.class));
+        getWorld().removeObject(this);
     }
 }
 

@@ -8,7 +8,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class MyWorld extends World
 {
-
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -31,5 +30,6 @@ public class MyWorld extends World
         addObject(girlmodel,113,213);
         title title = new title();
         addObject(title,391,98);
+       
     }
 }
