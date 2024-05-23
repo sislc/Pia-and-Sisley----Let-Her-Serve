@@ -20,6 +20,7 @@ public class playbutton extends Actor
         getWorld().removeObjects(getWorld().getObjects(girlmodel.class));
         getWorld().removeObjects(getWorld().getObjects(title.class));
         getWorld().removeObject(this);
+        //getWorld().addObject(nudemodel, 100, 300);
     }
 }
 
