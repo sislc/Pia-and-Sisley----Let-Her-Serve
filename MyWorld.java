@@ -18,6 +18,7 @@ public class MyWorld extends World
         super(600, 400, 1); 
         prepare();
     }
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
@@ -30,6 +31,7 @@ public class MyWorld extends World
         addObject(girlmodel,113,213);
         title title = new title();
         addObject(title,391,98);
-       
     }
-}
+    
+    
+    }
