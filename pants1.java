@@ -20,7 +20,7 @@ public class pants1 extends Actor
     }
     proceed3 proceed3 = new proceed3();
         dress1pants1 dress1pants1 = new dress1pants1();
-        if (Greenfoot.mouseClicked(this) && outfit1){
+        if (Greenfoot.mouseClicked(this) && ((MyWorld)getWorld()).store == 1){
             getWorld().addObject(dress1pants1, 310,217);
             getWorld().removeObjects(getWorld().getObjects(nudemodel.class));
             getWorld().addObject(proceed3, 562,359);
@@ -28,6 +28,10 @@ public class pants1 extends Actor
         if (!getWorld().getObjectsAt(310, 217, null).isEmpty() && Greenfoot.mouseClicked(this))
         {   
             getWorld().removeObjects(getWorld().getObjects(nudemodel.class));
+            getWorld().removeObjects(getWorld().getObjects(outfit1.class));
+            getWorld().removeObjects(getWorld().getObjects(outfit2.class));
+            getWorld().removeObjects(getWorld().getObjects(outfit3.class));
+            getWorld().removeObjects(getWorld().getObjects(outfit4.class));
             getWorld().removeObjects(getWorld().getObjects(dress1pants1.class));
             getWorld().removeObjects(getWorld().getObjects(dress1pants2.class));
             getWorld().removeObjects(getWorld().getObjects(dress1pants3.class));

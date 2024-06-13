@@ -22,6 +22,7 @@ public class dress1 extends Actor
         outfit1 outfit1 = new outfit1();
         proceed proceed = new proceed();
         if (Greenfoot.mouseClicked(this)){
+            ((MyWorld)getWorld()).store += 1;
             getWorld().addObject(outfit1, 310,217);
             getWorld().removeObjects(getWorld().getObjects(nudemodel.class));
             getWorld().addObject(proceed, 562,359);
