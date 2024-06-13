@@ -16,9 +16,10 @@ public class proceed extends Actor
     {
         if (Greenfoot.mouseClicked(this)) {
         getWorld().setBackground(new GreenfootImage("SecondRoom.png"));
-        getWorld().removeObjects(getWorld().getObjects(dress1.class));
-        getWorld().removeObjects(getWorld().getObjects(dress2.class));
-        getWorld().removeObjects(getWorld().getObjects(dress3.class));
+
+       getWorld().removeObjects(getWorld().getObjects(dress1.class));
+       getWorld().removeObjects(getWorld().getObjects(dress2.class));
+       getWorld().removeObjects(getWorld().getObjects(dress3.class));
         getWorld().removeObjects(getWorld().getObjects(dress4.class));
         getWorld().removeObjects(getWorld().getObjects(proceed.class));
     }
