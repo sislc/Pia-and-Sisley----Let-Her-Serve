@@ -8,18 +8,33 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class dress1 extends Actor
 {
-    //int speed = 0;
     /**
      * Act - do whatever the dress1 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
     {
-        //move(speed);
-        nudemodel nudemodel = new nudemodel();
-       if (nudemodel.getX() == 310 && nudemodel.getY() == 217){
-           setLocation(getX(), getY() - 5);
-           
+           if (getY() <= 85){
+               
+           setLocation(getX(), getY()+3);
+        }
+        
+        outfit1 outfit1 = new outfit1();
+        proceed proceed = new proceed();
+        if (Greenfoot.mouseClicked(this)){
+            getWorld().addObject(outfit1, 310,217);
+            getWorld().removeObjects(getWorld().getObjects(nudemodel.class));
+            getWorld().addObject(proceed, 562,359);
+        }
+        if (!getWorld().getObjectsAt(310, 217, null).isEmpty() && Greenfoot.mouseClicked(this))
+        {   
+            getWorld().removeObjects(getWorld().getObjects(nudemodel.class));
+            getWorld().removeObjects(getWorld().getObjects(outfit1.class));
+            getWorld().removeObjects(getWorld().getObjects(outfit2.class));
+            getWorld().removeObjects(getWorld().getObjects(outfit3.class));
+            getWorld().removeObjects(getWorld().getObjects(outfit4.class));
+            getWorld().addObject(outfit1, 310,217);
+        }   
        }
     }
-}
+
