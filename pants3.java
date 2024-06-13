@@ -14,6 +14,9 @@ public class pants3 extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+          if (getY() <= 302){
+               
+           setLocation(getX(), getY()+3);
     }
+}
 }

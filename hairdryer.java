@@ -19,6 +19,10 @@ public class hairdryer extends Actor
         getWorld().addObject(proceed2, 563, 358);
 
     }
+          if (Greenfoot.mouseDragged(this)){
+        MouseInfo mouse = Greenfoot.getMouseInfo();
+        setLocation(mouse.getX(), mouse.getY());
+    }
       if (Greenfoot.mousePressed(this)){
             Greenfoot.playSound("hair dryer.wav");
         }

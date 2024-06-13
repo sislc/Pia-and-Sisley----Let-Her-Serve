@@ -14,6 +14,25 @@ public class pants1 extends Actor
      */
     public void act()
     {
-        // Add your action code here.
+        if (getY() <= 85){
+               
+           setLocation(getX(), getY()+3);
     }
+    proceed3 proceed3 = new proceed3();
+        dress1pants1 dress1pants1 = new dress1pants1();
+        if (Greenfoot.mouseClicked(this)){
+            getWorld().addObject(outfit3, 310,217);
+            getWorld().removeObjects(getWorld().getObjects(nudemodel.class));
+            getWorld().addObject(proceed3, 562,359);
+        }
+        if (!getWorld().getObjectsAt(310, 217, null).isEmpty() && Greenfoot.mouseClicked(this))
+        {   
+            getWorld().removeObjects(getWorld().getObjects(nudemodel.class));
+            getWorld().removeObjects(getWorld().getObjects(outfit1.class));
+            getWorld().removeObjects(getWorld().getObjects(outfit2.class));
+            getWorld().removeObjects(getWorld().getObjects(outfit3.class));
+            getWorld().removeObjects(getWorld().getObjects(outfit4.class));
+            getWorld().addObject(outfit3, 310,217);
+        }  
+}
 }

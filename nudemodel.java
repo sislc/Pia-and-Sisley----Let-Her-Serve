@@ -19,6 +19,5 @@ public class nudemodel extends Actor
         if(getX() >= 310 && getY() == 217){
             speed = 0;
         }
-        // Add your action code here.
     }
 }

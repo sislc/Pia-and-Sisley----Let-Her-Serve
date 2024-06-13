@@ -14,9 +14,13 @@ public class shampoo extends Actor
      */
     public void act()
     {
+        if (Greenfoot.mouseDragged(this)){
+        MouseInfo mouse = Greenfoot.getMouseInfo();
+        setLocation(mouse.getX(), mouse.getY());
+    }
         if (Greenfoot.mousePressed(this)){
             Greenfoot.playSound("bubbles.wav");
         }
-       
 }
 }
+
