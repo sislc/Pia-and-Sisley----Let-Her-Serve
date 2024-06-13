@@ -18,11 +18,13 @@ public class dress2 extends Actor
                
            setLocation(getX(), getY()+3);
         }
-        
+    proceed proceed = new proceed();
     outfit2 outfit2 = new outfit2();
         if (Greenfoot.mouseClicked(this)){
             getWorld().addObject(outfit2, 310,217);
             getWorld().removeObjects(getWorld().getObjects(nudemodel.class));
+        
+            getWorld().addObject(proceed, 562,359);
     }
     
     if (!getWorld().getObjectsAt(310, 217, null).isEmpty() && Greenfoot.mouseClicked(this))
